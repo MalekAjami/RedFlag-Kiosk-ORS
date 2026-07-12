@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="RED FLAGS">
+<meta name="application-name" content="RED FLAGS">
+<meta name="theme-color" content="#C0392B">
+<title>RED FLAGS — ORS Medic-Help</title>
+<link rel="manifest" href="data:application/manifest+json;base64,ewogICJuYW1lIjogIlJFRCBGTEFHUyDigJQgT1JTIE1lZGljLUhlbHAiLAogICJzaG9ydF9uYW1lIjogIlJFRCBGTEFHUyIsCiAgImRlc2NyaXB0aW9uIjogIk91dGlsIGRlIHRyaWFnZSBtw6lkaWNhbCBSRUQgRkxBR1MiLAogICJzdGFydF91cmwiOiAiLiIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiI0MwMzkyQiIsCiAgInRoZW1lX2NvbG9yIjogIiNDMDM5MkIiLAogICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdCIsCiAgImljb25zIjogWwogICAgewogICAgICAic3JjIjogImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjRiV3h1Y3owaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNQzl6ZG1jaUlIWnBaWGRDYjNnOUlqQWdNQ0ExTVRJZ05URXlJajRLSUNBOGNtVmpkQ0IzYVdSMGFEMGlOVEV5SWlCb1pXbG5hSFE5SWpVeE1pSWdjbmc5SWpnd0lpQm1hV3hzUFNJalF6QXpPVEpDSWk4K0NpQWdQSEpsWTNRZ2VEMGlNakUySWlCNVBTSXhNREFpSUhkcFpIUm9QU0k0TUNJZ2FHVnBaMmgwUFNJek1USWlJSEo0UFNJeE5pSWdabWxzYkQwaWQyaHBkR1VpTHo0S0lDQThjbVZqZENCNFBTSXhNREFpSUhrOUlqSXhOaUlnZDJsa2RHZzlJak14TWlJZ2FHVnBaMmgwUFNJNE1DSWdjbmc5SWpFMklpQm1hV3hzUFNKM2FHbDBaU0l2UGdvZ0lEeDBaWGgwSUhnOUlqSTFOaUlnZVQwaU5ESXdJaUJtYjI1MExXWmhiV2xzZVQwaVFYSnBZV3dnUW14aFkyc3NJRUZ5YVdGc0lpQm1iMjUwTFhkbGFXZG9kRDBpT1RBd0lpQm1iMjUwTFhOcGVtVTlJamc0SWlCbWFXeHNQU0ozYUdsMFpTSWdkR1Y0ZEMxaGJtTm9iM0k5SW0xcFpHUnNaU0lnYjNCaFkybDBlVDBpTUM0NE5TSStVa1k4TDNSbGVIUStDand2YzNablBnPT0iLAogICAgICAic2l6ZXMiOiAiNTEyeDUxMiIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLAogICAgICAicHVycG9zZSI6ICJhbnkgbWFza2FibGUiCiAgICB9CiAgXQp9">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjgwIiBmaWxsPSIjQzAzOTJCIi8+CiAgPHJlY3QgeD0iMjE2IiB5PSIxMDAiIHdpZHRoPSI4MCIgaGVpZ2h0PSIzMTIiIHJ4PSIxNiIgZmlsbD0id2hpdGUiLz4KICA8cmVjdCB4PSIxMDAiIHk9IjIxNiIgd2lkdGg9IjMxMiIgaGVpZ2h0PSI4MCIgcng9IjE2IiBmaWxsPSJ3aGl0ZSIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iNDIwIiBmb250LWZhbWlseT0iQXJpYWwgQmxhY2ssIEFyaWFsIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9Ijg4IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC44NSI+UkY8L3RleHQ+Cjwvc3ZnPg==">
+<link rel="apple-touch-startup-image" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjgwIiBmaWxsPSIjQzAzOTJCIi8+CiAgPHJlY3QgeD0iMjE2IiB5PSIxMDAiIHdpZHRoPSI4MCIgaGVpZ2h0PSIzMTIiIHJ4PSIxNiIgZmlsbD0id2hpdGUiLz4KICA8cmVjdCB4PSIxMDAiIHk9IjIxNiIgd2lkdGg9IjMxMiIgaGVpZ2h0PSI4MCIgcng9IjE2IiBmaWxsPSJ3aGl0ZSIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iNDIwIiBmb250LWZhbWlseT0iQXJpYWwgQmxhY2ssIEFyaWFsIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9Ijg4IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC44NSI+UkY8L3RleHQ+Cjwvc3ZnPg==">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --red: #C0392B;
+  --red-dark: #96281B;
+  --orange: #E67E22;
+  --blue: #2471A3;
+  --green: #1E8449;
+  --gray: #626567;
+  --light: #F4F6F7;
+  --border: #D5D8DC;
+  --text: #1C2833;
+  --white: #ffffff;
+}
+
+html { height: 100%; }
+
+body {
+  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  color: var(--text);
+  background: #EAECEE;
+  -webkit-text-size-adjust: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+  max-width: 540px;
+  margin: 0 auto;
+  background: var(--white);
+  box-shadow: 0 0 30px rgba(0,0,0,0.15);
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: var(--red);
+  color: white;
+  padding: 14px 16px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+  position: relative;
+  z-index: 10;
+}
+
+.header-brand { line-height: 1; }
+.header-ors { font-size: 22px; font-weight: 900; letter-spacing: -1px; }
+.header-sub { font-size: 10px; font-weight: 500; opacity: 0.8; letter-spacing: 0.5px; text-transform: uppercase; }
+
+.header-tag {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.35);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.install-btn {
+  margin-left: auto;
+  flex: 0 0 auto;
+  border: 1px solid rgba(255,255,255,0.42);
+  background: rgba(255,255,255,0.14);
+  color: white;
+  border-radius: 999px;
+  padding: 6px 9px;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+}
+.install-btn:active { background: rgba(255,255,255,0.26); }
+
+.install-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(28,40,51,0.58);
+}
+.install-modal.open { display: flex; }
+.install-dialog {
+  width: min(100%, 420px);
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.28);
+}
+.install-dialog h2 {
+  font-size: 19px;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+.install-dialog p {
+  font-size: 15px;
+  line-height: 1.55;
+  color: #34495E;
+}
+.install-close {
+  width: 100%;
+  margin-top: 16px;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: var(--red);
+  color: white;
+  font: inherit;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+@media (max-width: 360px) {
+  .header { gap: 8px; padding-left: 12px; padding-right: 12px; }
+  .header-tag { padding: 4px 8px; letter-spacing: 1.3px; }
+  .install-btn { padding: 6px 8px; font-size: 10px; }
+}
+
+/* ===== CONTENT ===== */
+.content {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
+  padding: 20px 16px 16px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  padding: 14px 16px;
+  padding-bottom: max(14px, env(safe-area-inset-bottom));
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* ===== SCREENS ===== */
+.screen { display: none; }
+.screen.active { display: block; }
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  flex: 1;
+  min-height: 50px;
+  transition: opacity 0.1s;
+}
+.btn:active { opacity: 0.75; }
+
+.btn-primary  { background: var(--red);   color: white; }
+.btn-back     { background: var(--light); color: var(--text); border: 1.5px solid var(--border); flex: 0 0 auto; padding: 14px 16px; }
+.btn-print    { background: var(--blue);  color: white; }
+.btn-new      { background: var(--green); color: white; }
+
+/* ===== PAGE TITLE ===== */
+.page-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--red);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ===== FORM ===== */
+.form-group { margin-bottom: 14px; }
+
+.form-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 6px;
+}
+.req { color: var(--red); }
+
+.form-input, .form-select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  font-size: 16px;
+  color: var(--text);
+  background: white;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+.form-input:focus, .form-select:focus { border-color: var(--red); }
+.form-input.error { border-color: var(--red); background: #FEF9F9; }
+
+.err-msg { color: var(--red); font-size: 12px; margin-top: 4px; display: none; font-weight: 600; }
+.err-msg.show { display: block; }
+
+/* ===== CARD SELECTOR ===== */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.card-btn {
+  padding: 18px 10px;
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  background: white;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.3;
+  transition: border-color 0.15s, background 0.15s;
+}
+.card-icon { font-size: 30px; margin-bottom: 8px; display: block; }
+.card-btn:active { border-color: var(--red); background: #FEF9F9; }
+
+/* ===== DEFINITION ===== */
+.def-box {
+  background: var(--light);
+  border-left: 4px solid var(--blue);
+  border-radius: 0 10px 10px 0;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #2C3E50;
+}
+
+.rf-warning {
+  background: #FEF9F9;
+  border: 2px solid var(--red);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.rf-warning .cond { font-weight: 700; color: var(--blue); }
+.rf-warning .trigger {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--red);
+}
+
+/* ===== SYMPTOMS ===== */
+.sym-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 14px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 9px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  background: white;
+  transition: border-color 0.15s, background 0.15s;
+  min-height: 50px;
+}
+.sym-item.checked {
+  border-color: var(--red);
+  background: #FEF5F4;
+}
+
+.sym-cb {
+  width: 24px; height: 24px;
+  border: 2.5px solid var(--border);
+  border-radius: 6px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  transition: all 0.15s;
+}
+.sym-item.checked .sym-cb {
+  background: var(--red);
+  border-color: var(--red);
+}
+.sym-cb-icon { display: none; color: white; font-size: 14px; font-weight: 900; }
+.sym-item.checked .sym-cb-icon { display: block; }
+
+.sym-text { font-size: 14px; line-height: 1.4; flex: 1; font-weight: 500; }
+
+.appel-box {
+  background: #FDFDE7;
+  border: 2px solid #F39C12;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #7D6608;
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+/* ===== VITALS ===== */
+.etape-pill {
+  display: inline-block;
+  background: var(--blue);
+  color: white;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.vitals-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.vital-card {
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+}
+.vital-lbl {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--gray);
+  margin-bottom: 7px;
+}
+.vital-inp {
+  width: 100%;
+  padding: 10px 10px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+.vital-inp:focus { border-color: var(--blue); }
+.bp-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.bp-part {
+  text-align: center;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.bp-sep {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--gray);
+  line-height: 1;
+}
+.bp-unit {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--gray);
+  white-space: nowrap;
+}
+
+/* ===== RED FLAG BADGE ===== */
+@keyframes rfPulse {
+  0%   { background: #C0392B; box-shadow: 0 0 18px rgba(192,57,43,0.75), 0 0 40px rgba(192,57,43,0.35); }
+  50%  { background: #E67E22; box-shadow: 0 0 28px rgba(230,126,34,0.9),  0 0 60px rgba(230,126,34,0.5); }
+  100% { background: #C0392B; box-shadow: 0 0 18px rgba(192,57,43,0.75), 0 0 40px rgba(192,57,43,0.35); }
+}
+
+.rf-badge {
+  border-radius: 16px;
+  padding: 20px 16px;
+  text-align: center;
+  color: white;
+  animation: rfPulse 1.6s ease-in-out infinite;
+  margin-bottom: 16px;
+}
+.rf-badge h2 { font-size: 26px; font-weight: 900; letter-spacing: 3px; margin-bottom: 5px; }
+.rf-badge p  { font-size: 13px; opacity: 0.92; font-weight: 600; }
+
+/* ===== SUMMARY ===== */
+.sum-card {
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+.sum-lbl {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gray);
+  margin-bottom: 7px;
+}
+.sum-val { font-size: 15px; font-weight: 600; line-height: 1.55; }
+
+/* ===== HOTLINE BOX ===== */
+.hotline-wrap {
+  border: 2px solid var(--blue);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 14px;
+  background: #EBF5FB;
+}
+.hotline-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+.hotline-sel {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: 2px solid var(--blue);
+  border-radius: 9px;
+  font-size: 15px;
+  background: white;
+  color: var(--text);
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  font-family: inherit;
+  font-weight: 600;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%232471A3' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+.med-field { margin-top: 12px; }
+.med-label {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--blue);
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.med-textarea {
+  width: 100%;
+  min-height: 88px;
+  padding: 11px 12px;
+  border: 2px solid var(--blue);
+  border-radius: 9px;
+  font-size: 15px;
+  background: white;
+  color: var(--text);
+  outline: none;
+  resize: vertical;
+  font-family: inherit;
+  line-height: 1.4;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.med-textarea:focus { border-color: var(--red); }
+
+/* ===== PROTOCOL ===== */
+.protocol {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.p-step {
+  border-radius: 12px;
+  padding: 12px 8px;
+  text-align: center;
+}
+.p-step.p1 { background: #EAFAF1; border: 2px solid #1E8449; }
+.p-step.p2 { background: #FEF9E7; border: 2px solid #E67E22; }
+.p-step.p3 { background: #EBF5FB; border: 2px solid #2471A3; }
+
+.p-num {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.p1 .p-num { color: #1E8449; }
+.p2 .p-num { color: #E67E22; }
+.p3 .p-num { color: #2471A3; }
+
+.p-name { font-size: 13px; font-weight: 800; margin-bottom: 5px; }
+.p-body { font-size: 11px; line-height: 1.45; color: #444; }
+
+.alert-num { font-size: 26px; font-weight: 900; color: var(--red); display: block; margin: 2px 0; }
+
+/* ===== CONSCIOUSNESS BOX ===== */
+.cons-box {
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+.cons-title {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gray);
+  margin-bottom: 11px;
+}
+.cons-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 9px 10px;
+  border-radius: 9px;
+  margin-bottom: 7px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.cons-row:last-child { margin-bottom: 0; }
+.cons-row.c-ok  { background: #EAFAF1; }
+.cons-row.c-un  { background: #FEF5E7; }
+.cons-row.c-no  { background: #FDEDEC; }
+.cons-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.c-ok .cons-dot  { background: #1E8449; }
+.c-un .cons-dot  { background: #E67E22; }
+.c-no .cons-dot  { background: var(--red); }
+
+/* ===== FOOTER DATETIME ===== */
+.print-footer {
+  text-align: center;
+  color: var(--gray);
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+/* ===== INFO NOTE ===== */
+.info-note {
+  background: #EBF5FB;
+  border-left: 4px solid var(--blue);
+  border-radius: 0 10px 10px 0;
+  padding: 12px 14px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  color: #1A5276;
+}
+
+
+/* ===== SIMPLE CASES ===== */
+.section-heading {
+  margin: 22px 0 12px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gray);
+}
+.simple-audience-grid,
+.category-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.audience-btn,
+.category-btn {
+  min-height: 92px;
+  padding: 16px 10px;
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  background: white;
+  color: var(--text);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.3;
+  cursor: pointer;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+.audience-btn:active,
+.category-btn:active { border-color: var(--blue); background: #EBF5FB; }
+.audience-icon,
+.category-icon { display: block; font-size: 30px; margin-bottom: 8px; }
+.category-btn:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.reference-note {
+  background: #FDFEFE;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--green);
+  border-radius: 0 10px 10px 0;
+  padding: 11px 13px;
+  margin-bottom: 14px;
+  color: #34495E;
+  font-size: 13px;
+  line-height: 1.5;
+}
+/* Unified problem selector for all simple-case categories */
+.simple-note-box {
+  margin-bottom: 14px;
+  padding: 13px;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  background: var(--light);
+}
+.simple-note-label {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--gray);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+}
+.simple-note-optional {
+  font-weight: 650;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.simple-note-textarea {
+  width: 100%;
+  min-height: 76px;
+  padding: 11px 12px;
+  border: 2px solid var(--border);
+  border-radius: 9px;
+  background: white;
+  color: var(--text);
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.45;
+  outline: none;
+  resize: vertical;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.simple-note-textarea:focus { border-color: var(--blue); }
+.simple-problem-box {
+  margin-bottom: 14px;
+  padding: 14px;
+  border: 2px solid var(--blue);
+  border-radius: 12px;
+  background: #EBF5FB;
+}
+.simple-problem-label {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+}
+.simple-problem-help {
+  margin: 5px 0 11px;
+  color: #1A5276;
+  font-size: 12px;
+  line-height: 1.45;
+}
+.simple-problem-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.simple-problem-btn {
+  min-height: 52px;
+  padding: 10px;
+  border: 2px solid #AED6F1;
+  border-radius: 10px;
+  background: white;
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.3;
+  cursor: pointer;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+.simple-problem-btn:active,
+.simple-problem-btn.selected {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: white;
+}
+.simple-problem-btn:last-child:nth-child(odd) { grid-column: 1 / -1; }
+@media (max-width: 360px) {
+  .simple-problem-grid { grid-template-columns: 1fr; }
+  .simple-problem-btn:last-child:nth-child(odd) { grid-column: auto; }
+}
+.med-empty {
+  padding: 18px 14px;
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  background: var(--light);
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.5;
+  text-align: center;
+}
+.med-reason-tag {
+  margin: 8px 0 2px;
+  padding: 7px 9px;
+  border-radius: 8px;
+  background: #EBF5FB;
+  color: #1A5276;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+.med-list { display: grid; gap: 12px; }
+.med-card {
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  background: white;
+  transition: border-color .15s, background .15s;
+}
+.med-card.selected { border-color: var(--green); background: #F4FBF7; }
+.med-product { font-size: 17px; font-weight: 900; color: var(--text); margin-bottom: 3px; }
+.med-composition { font-size: 13px; font-weight: 700; color: var(--blue); margin-bottom: 11px; }
+.med-row { margin-top: 9px; }
+.med-row-label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  color: var(--gray);
+}
+.med-row-value { font-size: 13px; line-height: 1.45; color: #2C3E50; }
+.med-toggle {
+  width: 100%;
+  margin-top: 12px;
+  border: 0;
+  border-radius: 10px;
+  padding: 11px 12px;
+  background: var(--blue);
+  color: white;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 850;
+  cursor: pointer;
+}
+.med-card.selected .med-toggle { background: var(--green); }
+.selected-panel {
+  margin-top: 16px;
+  padding: 13px;
+  border: 2px solid var(--green);
+  border-radius: 12px;
+  background: #EAFAF1;
+}
+.selected-panel-title { font-size: 13px; font-weight: 900; color: var(--green); margin-bottom: 8px; }
+.selected-chip-list { display: flex; flex-wrap: wrap; gap: 7px; }
+.selected-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: white;
+  border: 1px solid #A9DFBF;
+  font-size: 12px;
+  font-weight: 750;
+}
+.simple-med-summary { display: grid; gap: 10px; }
+.simple-med-summary .med-card { padding: 13px; }
+
+/* ===== DEDICATED PRINT REPORT ===== */
+#printReport { display: none; }
+.print-report-inner {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #1C2833;
+  background: white;
+}
+.pr-title {
+  font-size: 21px;
+  color: #C0392B;
+  border-bottom: 3px solid #C0392B;
+  padding-bottom: 8px;
+  margin-bottom: 14px;
+}
+.pr-section-title {
+  font-size: 13px;
+  color: #2471A3;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 15px 0 7px;
+}
+.pr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+.pr-cell { background:#F4F6F7; border-radius:8px; padding:9px; border:1px solid #D5D8DC; }
+.pr-label { font-size:10px; font-weight:900; text-transform:uppercase; color:#626567; margin-bottom:3px; }
+.pr-value { font-size:14px; font-weight:700; line-height:1.4; }
+.pr-rf { background:#C0392B; color:white; padding:15px; border-radius:12px; text-align:center; margin:14px 0; }
+.pr-rf-title { font-size:20px; font-weight:900; letter-spacing:3px; margin-bottom:4px; }
+.pr-ok { color:#1E8449; font-weight:800; font-size:15px; margin:10px 0; padding:12px; background:#EAFAF1; border-radius:10px; }
+.pr-box { border:2px solid #2471A3; border-radius:10px; padding:12px; margin:12px 0; background:#EBF5FB; }
+.pr-med { border:1.5px solid #D5D8DC; border-radius:10px; padding:11px; margin:9px 0; break-inside:avoid; }
+.pr-med-title { font-size:16px; font-weight:900; margin-bottom:3px; }
+.pr-med-sub { color:#2471A3; font-size:12px; font-weight:800; margin-bottom:7px; }
+.pr-med-row { margin-top:6px; font-size:12px; line-height:1.45; }
+.pr-med-row strong { color:#626567; text-transform:uppercase; font-size:10px; letter-spacing:.4px; }
+.pr-footer { margin-top:18px; font-size:11px; color:#777; text-align:center; border-top:1px solid #EEE; padding-top:10px; }
+
+/* ===== PRINT ===== */
+@page { margin: 10mm; }
+@media print {
+  body { background: white; overflow: visible; }
+  .app, .install-modal { display: none !important; }
+  #printReport { display: block !important; }
+  .print-report-inner { display: block; }
+  .pr-rf, .pr-ok, .pr-box, .pr-cell, .pr-med {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-brand">
+      <div class="header-ors">ors</div>
+      <div class="header-sub">Medic-Help</div>
+    </div>
+    <div class="header-tag">RED FLAGS</div>
+    <button type="button" class="install-btn" id="installBtn" onclick="handleInstallClick()" aria-label="Installer l’application">⬇ Installer</button>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content" id="mainContent">
+
+    <!-- SCREEN 0 — Patient Info -->
+    <div class="screen active" id="screen0">
+      <div class="page-title">🏥 Informations Patient</div>
+
+      <div class="form-group">
+        <label class="form-label">Centre <span class="req">*</span></label>
+        <input type="text" id="f_centre" class="form-input" placeholder="Nom du centre" autocomplete="off" autocorrect="off" spellcheck="false">
+        <div class="err-msg" id="e_centre">Ce champ est obligatoire</div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Bâtiment <span class="req">*</span></label>
+        <input type="text" id="f_batiment" class="form-input" placeholder="Numéro / nom du bâtiment" autocomplete="off" autocorrect="off" spellcheck="false">
+        <div class="err-msg" id="e_batiment">Ce champ est obligatoire</div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Heure <span class="req">*</span></label>
+        <input type="time" id="f_heure" class="form-input">
+        <div class="err-msg" id="e_heure">Ce champ est obligatoire</div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">RA <span class="req">*</span></label>
+        <input type="text" id="f_ra" class="form-input" placeholder="Numéro RA" autocomplete="off" autocorrect="off" spellcheck="false" inputmode="text">
+        <div class="err-msg" id="e_ra">Ce champ est obligatoire</div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Date de naissance <span class="req">*</span></label>
+        <input type="date" id="f_ddn" class="form-input">
+        <div class="err-msg" id="e_ddn">Ce champ est obligatoire</div>
+      </div>
+    </div>
+
+    <!-- SCREEN 1 — Orientation -->
+    <div class="screen" id="screen1">
+      <div class="page-title">🩺 Orientation</div>
+      <div class="section-heading" style="margin-top:0;padding-top:0;border-top:0">Situations RED FLAG</div>
+      <div class="card-grid">
+        <div class="card-btn" id="cb_abdominales" onclick="selectCard('abdominales')"><span class="card-icon">🤢</span>Douleurs<br>Abdominales</div>
+        <div class="card-btn" id="cb_thoraciques" onclick="selectCard('thoraciques')"><span class="card-icon">🫀</span>Douleurs<br>Thoraciques</div>
+        <div class="card-btn" id="cb_neurologiques" onclick="selectCard('neurologiques')"><span class="card-icon">🧠</span>Troubles<br>Neurologiques</div>
+        <div class="card-btn" id="cb_brulures" onclick="selectCard('brulures')"><span class="card-icon">🔥</span>Brûlures</div>
+        <div class="card-btn" id="cb_plaies" onclick="selectCard('plaies')"><span class="card-icon">🩹</span>Plaies &amp;<br>Traumatismes</div>
+        <div class="card-btn" id="cb_respiratoires" onclick="selectCard('respiratoires')"><span class="card-icon">🫁</span>Problèmes<br>Respiratoires</div>
+      </div>
+      <div class="section-heading">Cas simples</div>
+      <div class="simple-audience-grid">
+        <button type="button" class="audience-btn" onclick="chooseSimpleAudience('adult')"><span class="audience-icon">🧑</span>Adultes</button>
+        <button type="button" class="audience-btn" onclick="chooseSimpleAudience('child')"><span class="audience-icon">👶</span>Enfants</button>
+      </div>
+    </div>
+
+    <!-- SCREEN 2 — Definition -->
+    <div class="screen" id="screen2">
+      <div class="page-title" id="s2_title">Définition</div>
+      <div class="def-box" id="s2_def"></div>
+      <div class="rf-warning">
+        <div>Si la personne présente <span class="cond" id="s2_cond"></span></div>
+        <div style="margin-top:8px; font-weight:700">ET</div>
+        <div class="trigger">⚠️ 1 ou plusieurs symptôme(s) suivants → RED FLAG</div>
+      </div>
+    </div>
+
+    <!-- SCREEN 3 — Symptoms -->
+    <div class="screen" id="screen3">
+      <div class="page-title">⚠️ Symptômes</div>
+      <div id="symList"></div>
+      <div class="appel-box">Autres symptômes ? → <strong>Appel au médecin de garde</strong></div>
+    </div>
+
+    <!-- SCREEN 6 — Simple case categories -->
+    <div class="screen" id="screen6">
+      <div class="page-title">🧰 Cas simples — <span id="s6_audience">Adultes</span></div>
+      <div class="simple-note-box">
+        <label class="simple-note-label" for="simpleCaseNote">Note / description du cas <span class="simple-note-optional">(facultatif)</span></label>
+        <textarea id="simpleCaseNote" class="simple-note-textarea" placeholder="Décrivez brièvement le problème, les symptômes ou toute information utile…"></textarea>
+      </div>
+      <div class="reference-note">Référentiel médicaments du kiosk — version du 15.06.2026. Vérifier les indications, contre-indications et la posologie avant administration.</div>
+      <div class="category-grid">
+        <button type="button" class="category-btn" onclick="selectSimpleCategory('douleurs')"><span class="category-icon">🤕</span>Douleurs</button>
+        <button type="button" class="category-btn" onclick="selectSimpleCategory('grippe')"><span class="category-icon">🤧</span>État grippal / rhume</button>
+        <button type="button" class="category-btn" onclick="selectSimpleCategory('digestif')"><span class="category-icon">🍽️</span>Digestif</button>
+        <button type="button" class="category-btn" onclick="selectSimpleCategory('sommeil')"><span class="category-icon">😴</span>Sommeil / stress</button>
+        <button type="button" class="category-btn" onclick="selectSimpleCategory('allergies')"><span class="category-icon">🌿</span>Allergies</button>
+      </div>
+      <div class="selected-panel" id="s6_selected_panel" style="display:none">
+        <div class="selected-panel-title" id="s6_selected_title">Médicaments sélectionnés</div>
+        <div class="selected-chip-list" id="s6_selected_chips"></div>
+      </div>
+    </div>
+
+    <!-- SCREEN 7 — Simple case medicines -->
+    <div class="screen" id="screen7">
+      <div class="page-title">💊 <span id="s7_title">Médicaments</span></div>
+      <div class="reference-note" id="s7_reference"></div>
+      <div class="simple-problem-box" id="s7_reason_box">
+        <div class="simple-problem-label">Quel est le problème&nbsp;?</div>
+        <div class="simple-problem-help">Choisissez le motif précis pour afficher uniquement les médicaments correspondants.</div>
+        <div class="simple-problem-grid" id="simpleReasonList"></div>
+      </div>
+      <div class="med-list" id="medList"></div>
+      <div class="selected-panel" id="s7_selected_panel" style="display:none">
+        <div class="selected-panel-title" id="s7_selected_title">Médicaments sélectionnés</div>
+        <div class="selected-chip-list" id="s7_selected_chips"></div>
+      </div>
+    </div>
+
+    <!-- SCREEN 4 — Signes vitaux -->
+    <div class="screen" id="screen4">
+      <div class="etape-pill">Étape 4</div>
+      <div class="page-title">📊 Signes Vitaux</div>
+      <div class="info-note">Enregistrez les signes vitaux du patient. Ces champs sont facultatifs.</div>
+      <div class="vitals-grid">
+        <div class="vital-card">
+          <div class="vital-lbl">Tension artérielle</div>
+          <div class="bp-row">
+            <input type="text" id="v_ta_sys" class="vital-inp bp-part" placeholder="120" inputmode="numeric" pattern="[0-9]*" maxlength="3" aria-label="Tension systolique">
+            <span class="bp-sep">/</span>
+            <input type="text" id="v_ta_dia" class="vital-inp bp-part" placeholder="80" inputmode="numeric" pattern="[0-9]*" maxlength="3" aria-label="Tension diastolique">
+            <span class="bp-unit">mmHg</span>
+          </div>
+        </div>
+        <div class="vital-card">
+          <div class="vital-lbl">Fréquence cardiaque</div>
+          <input type="number" id="v_fc" class="vital-inp" placeholder="___  bpm" inputmode="numeric" min="0" max="300">
+        </div>
+        <div class="vital-card">
+          <div class="vital-lbl">Saturation O₂</div>
+          <input type="number" id="v_spo2" class="vital-inp" placeholder="___%"  inputmode="numeric" min="0" max="100">
+        </div>
+        <div class="vital-card">
+          <div class="vital-lbl">Température</div>
+          <input type="number" id="v_temp" class="vital-inp" placeholder="__°C" inputmode="decimal" step="0.1" min="30" max="45">
+        </div>
+        <div class="vital-card">
+          <div class="vital-lbl">Glycémie</div>
+          <input type="number" id="v_glyc" class="vital-inp" placeholder="___ mmol/L" inputmode="decimal" step="0.1">
+        </div>
+        <div class="vital-card">
+          <div class="vital-lbl">Douleur /10</div>
+          <input type="number" id="v_doul" class="vital-inp" placeholder="__/10" inputmode="numeric" min="0" max="10">
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN 5 — Quoi faire -->
+    <div class="screen" id="screen5">
+      <div class="etape-pill">Étape 5</div>
+      <div class="page-title" id="s5_page_title">🚑 Quoi faire ?</div>
+
+      <div class="sum-card">
+        <div class="sum-lbl">Patient</div>
+        <div class="sum-val" id="s5_patient"></div>
+      </div>
+
+      <div class="sum-card">
+        <div class="sum-lbl" id="s5_type_label">Type de douleur</div>
+        <div class="sum-val" id="s5_type"></div>
+      </div>
+
+      <div class="sum-card" id="s5_vitals_wrap">
+        <div class="sum-lbl">Signes vitaux</div>
+        <div class="sum-val" id="s5_vitals"></div>
+      </div>
+
+      <div class="sum-card" id="s5_sym_wrap">
+        <div class="sum-lbl">Symptômes cochés</div>
+        <div class="sum-val" id="s5_symptoms"></div>
+      </div>
+
+      <div id="s5_simple_wrap" style="display:none">
+        <div class="sum-card" id="s5_simple_note_wrap" style="display:none">
+          <div class="sum-lbl">Note / description du cas</div>
+          <div class="sum-val" id="s5_simple_note"></div>
+        </div>
+        <div class="reference-note">Référentiel médicaments — version du 15.06.2026</div>
+        <div class="simple-med-summary" id="s5_simple_meds"></div>
+      </div>
+
+      <!-- RED FLAG badge -->
+      <div class="rf-badge" id="s5_rfBadge" style="display:none">
+        <h2>🚨 RED FLAG</h2>
+        <p>Agissez immédiatement — appelez le 144</p>
+      </div>
+
+      <!-- Hotline (positioned right after RED FLAG) -->
+      <div class="hotline-wrap" id="s5_hotline_wrap">
+        <div class="hotline-title">📞 Selon l’avis de la hotline :</div>
+        <select id="hotlineSel" class="hotline-sel">
+          <option value="">— Choisir une décision —</option>
+          <option value="surveiller">Surveillez-le attentivement.</option>
+          <option value="taxi">Conduisez-le à l'hôpital en taxi.</option>
+          <option value="ambulance">Conduisez-le à l'hôpital en ambulance.</option>
+        </select>
+        <div class="med-field">
+          <div class="med-label">💊 Médicament(s) à administrer</div>
+          <textarea id="medicationNotes" class="med-textarea" placeholder="Nom du médicament, dose, voie, heure…"></textarea>
+        </div>
+      </div>
+
+      <!-- Protocol -->
+      <div class="protocol" id="s5_protocol">
+        <div class="p-step p1">
+          <div class="p-num">1. Protéger</div>
+          <div class="p-name">PROTÉGER</div>
+          <div class="p-body" id="s5_proteger"></div>
+        </div>
+        <div class="p-step p2">
+          <div class="p-num">2. Alerter</div>
+          <div class="p-name">ALERTER</div>
+          <span class="alert-num">144</span>
+          <div class="p-body">Où? Qui? Quoi? Quand? Combien? Autres infos...</div>
+        </div>
+        <div class="p-step p3">
+          <div class="p-num">3. Secourir</div>
+          <div class="p-name">SECOURIR</div>
+          <div class="p-body" id="s5_secourir"></div>
+        </div>
+      </div>
+
+      <!-- Consciousness assessment -->
+      <div class="cons-box" id="s5_consciousness">
+        <div class="cons-title">Évaluation de la conscience</div>
+        <div class="cons-row c-ok">
+          <div class="cons-dot"></div>
+          <div><strong>Personne consciente</strong> → Surveillance continue → Arrivée ambulance + F2</div>
+        </div>
+        <div class="cons-row c-un">
+          <div class="cons-dot"></div>
+          <div><strong>Personne inconsciente — Respire</strong> → PLS · Surveiller respiration → Arrivée ambulance + F2</div>
+        </div>
+        <div class="cons-row c-no">
+          <div class="cons-dot"></div>
+          <div><strong>Ne respire plus</strong> → Algorythme BLS-AED → Arrivée ambulance + F2</div>
+        </div>
+      </div>
+
+      <div class="print-footer" id="s5_datetime"></div>
+    </div>
+
+  </div><!-- /content -->
+
+  <!-- FOOTER BUTTONS -->
+  <div class="footer">
+    <button class="btn btn-back"    id="btnBack"  onclick="goBack()"      style="display:none">← Retour</button>
+    <button class="btn btn-primary" id="btnNext"  onclick="goNext()">Suivant →</button>
+    <button class="btn btn-print"   id="btnPrint" onclick="doPrint()"     style="display:none">🖨️ Imprimer</button>
+    <button class="btn btn-new"     id="btnNew"   onclick="newPatient()"  style="display:none">🔄 Nouveau</button>
+  </div>
+
+</div><!-- /app -->
+
+<div id="printReport" aria-hidden="true"></div>
+
+<div class="install-modal" id="installModal" role="dialog" aria-modal="true" aria-labelledby="installTitle" onclick="closeInstallModal(event)">
+  <div class="install-dialog">
+    <h2 id="installTitle">Installer RED FLAGS</h2>
+    <p id="installMessage"></p>
+    <button type="button" class="install-close" onclick="closeInstallModal()">Fermer</button>
+  </div>
+</div>
+
+<script>
+/* ==================== APP HELPERS ==================== */
+if ('serviceWorker' in navigator && window.isSecureContext) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('./sw.js').catch(function() {});
+  });
+}
+
+var deferredInstallPrompt = null;
+
+function isStandaloneApp() {
+  return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+}
+
+function isIOSDevice() {
+  return /iphone|ipad|ipod/i.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+}
+
+function updateInstallButton() {
+  var btn = document.getElementById('installBtn');
+  if (btn) btn.style.display = isStandaloneApp() ? 'none' : 'inline-flex';
+}
+
+window.addEventListener('beforeinstallprompt', function(event) {
+  event.preventDefault();
+  deferredInstallPrompt = event;
+  updateInstallButton();
+});
+
+window.addEventListener('appinstalled', function() {
+  deferredInstallPrompt = null;
+  updateInstallButton();
+});
+
+function openInstallModal(message) {
+  var modal = document.getElementById('installModal');
+  var text = document.getElementById('installMessage');
+  if (!modal || !text) return;
+  text.textContent = message;
+  modal.classList.add('open');
+}
+
+function closeInstallModal(event) {
+  var modal = document.getElementById('installModal');
+  if (!modal) return;
+  if (event && event.target !== modal) return;
+  modal.classList.remove('open');
+}
+
+async function handleInstallClick() {
+  if (isStandaloneApp()) {
+    updateInstallButton();
+    return;
+  }
+
+  if (deferredInstallPrompt) {
+    var promptEvent = deferredInstallPrompt;
+    deferredInstallPrompt = null;
+    await promptEvent.prompt();
+    try { await promptEvent.userChoice; } catch (e) {}
+    updateInstallButton();
+    return;
+  }
+
+  if (isIOSDevice()) {
+    openInstallModal('Dans Safari : touchez Partager, puis « En voir plus » si nécessaire, puis « Sur l’écran d’accueil ».');
+    return;
+  }
+
+  openInstallModal('Ouvrez le menu du navigateur, puis choisissez « Installer l’application » ou « Ajouter à l’écran d’accueil ».');
+}
+
+window.addEventListener('DOMContentLoaded', updateInstallButton);
+window.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') closeInstallModal();
+});
+
+function esc(value) {
+  return String(value == null ? '' : value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function nl2brEsc(value) {
+  return esc(value).replace(/\n/g, '<br>');
+}
+
+function getBloodPressure() {
+  var sys = document.getElementById('v_ta_sys').value.trim();
+  var dia = document.getElementById('v_ta_dia').value.trim();
+  if (sys && dia) return sys + '/' + dia;
+  if (sys) return sys + '/—';
+  if (dia) return '—/' + dia;
+  return '';
+}
+
+/* ==================== DATA ==================== */
+var CARDS = {
+  abdominales: {
+    title: 'DOULEURS ABDOMINALES',
+    cond: 'une douleur abdominale',
+    def: 'Communément appelées « maux de ventre », ce sont des sensations anormales et pénibles au niveau de l\'abdomen. Elles peuvent être localisées, se déplacer ou être généralisées. Elles sont de différents types (crampes, brûlures, torsion, « en coup de poignard ») et ont différentes origines (maladies infectieuses, chroniques, problèmes digestifs, traumatismes). Leur gravité va du problème bénin à l\'urgence vitale en fonction des symptômes présents.',
+    symptoms: [
+      'Fièvre ≥ 38.5°C',
+      'Perte de connaissance',
+      'Vomissements incontrôlables',
+      'Âge < 3 ans ou > 60 ans',
+      'Diabète connu',
+      'Abdomen dur',
+      'Grossesse et/ou saignement vaginal inhabituel',
+      'Sang frais abondant dans les selles et/ou vomi',
+      'Position pliée et/ou difficulté à tendre les jambes',
+      'Plaie profonde et/ou hématome étendu',
+      'Opération abdominale récente'
+    ],
+    proteger: 'Rassurer\nMettre au repos',
+    secourir: 'Prise des signes vitaux\nSurveiller conscience\nSurveiller respiration\nGarder à jeûn'
+  },
+  thoraciques: {
+    title: 'DOULEURS THORACIQUES',
+    cond: 'une douleur thoracique',
+    def: 'La douleur thoracique est une sensation anormale et pénible au niveau du thorax. Elle peut être localisée ou étendue, elle peut irradier (se déplacer) ou non. Elle peut avoir différentes origines (tabagisme, angoisse, traumatisme, problème de cœur) et sa gravité peut aller du problème bénin à l\'urgence vitale en fonction des symptômes présents.',
+    symptoms: [
+      'Sueurs / Pâleur',
+      'Diabète connu',
+      'Grossesse',
+      'Âge > 60 ans',
+      'Main sur la poitrine',
+      'Perte de connaissance',
+      'Consommation connue de cocaïne'
+    ],
+    proteger: 'Rassurer\nMettre au repos',
+    secourir: 'Prise des signes vitaux\nSurveiller conscience\nSurveiller respiration'
+  },
+  neurologiques: {
+    title: 'TROUBLES NEUROLOGIQUES',
+    cond: 'un trouble neurologique',
+    def: 'Ce sont des dysfonctionnements du système nerveux. Ils peuvent avoir différentes origines (maladies infectieuses chroniques génétiques, traumatisme physique ou psychique, prise de produits, manque d\'oxygène) et se manifestent par des symptômes qui peuvent affecter les 5 sens, la cognition (langage, compréhension, mémoire, orientation), la motricité et/ou la sensitivité.',
+    symptoms: [
+      'Grossesse',
+      'Diabète connu',
+      'Convulsions',
+      'Menaces suicidaires',
+      'Âge < 3 ans ou > 60 ans',
+      'Paralysie d\'un côté du corps',
+      'Réduction soudaine du champ visuel',
+      'Visage inhabituel et asymétrique / coin des lèvres pendant',
+      'Difficulté / impossibilité à s\'exprimer clairement',
+      'Hallucinations visuelles et/ou auditives',
+      'Perte de conscience / trouble de la conscience',
+      'Traumatisme crânien AVEC perte de connaissance'
+    ],
+    proteger: 'Rassurer\nMettre au repos',
+    secourir: 'Prise des signes vitaux\nSurveiller conscience\nSurveiller respiration\nGarder à jeûn'
+  },
+  brulures: {
+    title: 'BRÛLURES',
+    cond: 'une brûlure',
+    def: 'La brûlure est une destruction des tissus biologiques (peau, muqueuses, muscles, organes, phanères, os) par une source thermique, chimique, électrique, mécanique ou radiologique. On évalue la gravité d\'une brûlure selon 3 critères : la localisation de la brûlure, l\'étendue et le degré (1er, 2ème ou 3ème degré).',
+    symptoms: [
+      'Brûlure à la / aux main(s)',
+      'Brûlure au(x) pied(s)',
+      'Brûlure génitale',
+      'Électrocution',
+      'Brûlure à l\'œil / aux yeux',
+      'Perte de connaissance',
+      'Brûlure au visage',
+      'Surface brûlée > surface de la main ouverte de la victime',
+      'Brûlure circulaire (fait le tour complet d\'une partie du corps)',
+      'Brûlure due à une explosion',
+      'Brûlure des voies aériennes (muqueuses du nez, bouche)',
+      'Structures profondes visibles (graisse, muscle, os)',
+      'Engelure (brûlure due au froid)'
+    ],
+    proteger: 'Éliminer la source de la brûlure\nRassurer\nMettre au repos',
+    secourir: 'Rincer la zone brûlée à l\'eau froide min. 10 minutes\nPrise des signes vitaux\nSurveiller conscience\nSurveiller respiration'
+  },
+  plaies: {
+    title: 'PLAIES & TRAUMATISMES, SAIGNEMENTS',
+    cond: 'une plaie, un traumatisme et/ou un saignement',
+    def: 'Une plaie est une blessure superficielle (lésion de la peau) ou profonde (lésion de la peau ET des tissus mous sous-jacents). Elle peut avoir différentes origines (traumatique, infectieuse ou chirurgicale). La gravité d\'une plaie dépend de son emplacement, sa profondeur, des saignements qui en proviennent et du contexte d\'apparition (accident, violence, chirurgie, etc.).',
+    symptoms: [
+      'Saignement abondant',
+      'Saignement pulsatile',
+      'Plaie profonde',
+      'Plaie par balle',
+      'Perte de connaissance',
+      'Déformation d\'un membre visible à l\'œil nu',
+      'Déformation visible sur trauma au nez, visage, bouche ou gorge',
+      'Structures profondes visibles (graisse, muscle, os)',
+      'Objet blessant toujours dans la plaie (ne jamais retirer !)',
+      'Perte totale de mobilité et/ou de sensibilité d\'un membre'
+    ],
+    proteger: 'Stopper le saignement par compression\nRassurer\nMettre au repos',
+    secourir: 'Surveiller l\'arrêt du saignement\nPrise des signes vitaux\nSurveiller conscience\nSurveiller respiration'
+  },
+  respiratoires: {
+    title: 'PROBLÈMES RESPIRATOIRES',
+    cond: 'un problème respiratoire',
+    def: 'Ce terme englobe la totalité des atteintes possibles du système respiratoire. Ils peuvent avoir des origines multiples (maladie, traumatisme physique ou psychique, corps étranger) et peuvent devenir très rapidement des urgences vitales notamment lors d\'obstruction (partielle ou complète) des voies aériennes par un corps étranger.',
+    symptoms: [
+      'Âge < 3 ans ou > 60 ans',
+      'Perte de connaissance',
+      'Changement de voix',
+      'Crachats sanglants',
+      'Grossesse',
+      'Mains autour du cou',
+      'Difficulté à finir ses phrases',
+      'Lèvres bleues / visage très rouge, bleu, violet',
+      'Agitation / désorientation / somnolence',
+      'Bouche grande ouverte sans son qui en sort'
+    ],
+    proteger: 'Rassurer\nMettre au repos',
+    secourir: 'Obstruction partielle? → Faire tousser\nObstruction complète?\n• Âge < 1 an : MOFENSON\n• Âge > 1 an : HEIMLICH\nPrise des signes vitaux\nSurveiller conscience\nSurveiller respiration\nGarder à jeûn'
+  }
+};
+
+
+/* ==================== SIMPLE CASE MEDICATION DATA ==================== */
+var SIMPLE_CATEGORY_LABELS = {
+  douleurs: 'Douleurs',
+  grippe: 'État grippal / rhume',
+  digestif: 'Digestif',
+  sommeil: 'Sommeil / stress',
+  allergies: 'Allergies'
+};
+/* Patient-facing problem choices for every simple-case category.
+   Each choice maps only to medicines whose source indications cover it. */
+var SIMPLE_REASON_RULES = {
+  adult: {
+    douleurs: [
+      {label:'Articulations / dos', medIds:['a-douleurs-dafalgan-500','a-douleurs-irfen-400']},
+      {label:'Mal de tête', medIds:['a-douleurs-dafalgan-500']},
+      {label:'Douleur dentaire', medIds:['a-douleurs-dafalgan-500','a-douleurs-irfen-400']},
+      {label:'Blessure / traumatisme léger', medIds:['a-douleurs-dafalgan-500','a-douleurs-irfen-400','a-douleurs-ecofenac']},
+      {label:'Fièvre / symptômes grippaux', medIds:['a-douleurs-dafalgan-500']},
+      {label:'Douleur abdominale', medIds:['a-douleurs-dafalgan-500']},
+      {label:'Douleurs menstruelles', medIds:['a-douleurs-irfen-400']},
+      {label:'Inflammation', medIds:['a-douleurs-irfen-400']},
+      {label:'Douleur musculaire', medIds:['a-douleurs-ecofenac']}
+    ],
+    grippe: [
+      {label:'Rhume / nez bouché', medIds:['a-grippe-serophy']},
+      {label:'Maux de gorge', medIds:['a-grippe-angina-mcc','a-grippe-drossadin']},
+      {label:'Inflammation buccale', medIds:['a-grippe-drossadin']}
+    ],
+    digestif: [
+      {label:'Brûlures d’estomac / reflux acides', medIds:['a-digestif-riopan']},
+      {label:'Nausées / vomissements', medIds:['a-digestif-itinerol']},
+      {label:'Diarrhées', medIds:['a-digestif-carbolevure']}
+    ],
+    sommeil: [
+      {label:'Trouble du sommeil / difficulté à s’endormir', medIds:['a-sommeil-redormin']},
+      {label:'Tensions nerveuses', medIds:['a-sommeil-relaxane']}
+    ],
+    allergies: [
+      {label:'Urticaire', medIds:['a-allergies-feniallerg','a-allergies-cetallerg']},
+      {label:'Piqûre d’insecte', medIds:['a-allergies-feniallerg']},
+      {label:'Démangeaisons', medIds:['a-allergies-feniallerg']},
+      {label:'Rhume des foins', medIds:['a-allergies-cetallerg']}
+    ]
+  },
+  child: {
+    douleurs: [
+      {label:'Articulations / dos', medIds:['e-douleurs-dafalgan-500','e-douleurs-dafalgan-80','e-douleurs-dafalgan-150','e-douleurs-dafalgan-300']},
+      {label:'Mal de tête', medIds:['e-douleurs-dafalgan-500','e-douleurs-dafalgan-80','e-douleurs-dafalgan-150','e-douleurs-dafalgan-300']},
+      {label:'Douleur dentaire', medIds:['e-douleurs-dafalgan-500','e-douleurs-dafalgan-80','e-douleurs-dafalgan-150','e-douleurs-dafalgan-300']},
+      {label:'Blessure', medIds:['e-douleurs-dafalgan-500','e-douleurs-dafalgan-80','e-douleurs-dafalgan-150','e-douleurs-dafalgan-300']},
+      {label:'Fièvre / symptômes grippaux', medIds:['e-douleurs-dafalgan-500','e-douleurs-dafalgan-80','e-douleurs-dafalgan-150','e-douleurs-dafalgan-300']},
+      {label:'Douleur abdominale', medIds:['e-douleurs-dafalgan-500','e-douleurs-dafalgan-80','e-douleurs-dafalgan-150','e-douleurs-dafalgan-300']}
+    ],
+    grippe: [
+      {label:'Rhume / nez bouché', medIds:['e-grippe-serophy']}
+    ],
+    digestif: [
+      {label:'Diarrhées', medIds:['e-digestif-perenterol']},
+      {label:'Nausées / vomissements', medIds:['e-digestif-itinerol']}
+    ],
+    sommeil: [
+      {label:'Trouble du sommeil / difficulté à s’endormir', medIds:['e-sommeil-redormin']}
+    ],
+    allergies: [
+      {label:'Urticaire', medIds:['e-allergies-feniallerg']},
+      {label:'Piqûre d’insecte', medIds:['e-allergies-feniallerg']},
+      {label:'Démangeaisons', medIds:['e-allergies-feniallerg']}
+    ]
+  }
+};
+var SIMPLE_MEDS = {
+  adult: {
+    douleurs: [
+      {id:'a-douleurs-dafalgan-500',product:'Dafalgan 500 mg',composition:'Paracétamol',indications:['Articulations & dos','Tête','Dents','Blessures','Fièvre et symptômes grippaux','Douleur abdominale'],contraindications:['Enfants < 30 kg'],dosage:'Max. 4× par jour, soit toutes les 4 à 6 h.'},
+      {id:'a-douleurs-irfen-400',product:'Irfen 400 mg',composition:'Ibuprofène',indications:['Articulations & dos','Dents','Douleurs menstruelles','Blessures / traumatisme léger','Inflammations'],contraindications:['Enfants < 12 ans','Enfants < 30 kg','Dernier trimestre de grossesse'],dosage:'Max. 3× par jour, soit toutes les 8 h.'},
+      {id:'a-douleurs-ecofenac',product:'Ecofenac',composition:'Diclofénac',indications:['Douleur musculaire','Traumatisme léger'],contraindications:['Plaies','Grossesse et allaitement'],dosage:'Masser 4× par jour, soit toutes les 4 à 6 h.'}
+    ],
+    grippe: [
+      {id:'a-grippe-serophy',product:'Serophy',composition:'NaCl 0,9 %',indications:['Rhume / nez bouché'],contraindications:['Aucune'],dosage:'Plusieurs lavages par jour, avant les repas et avant les siestes.'},
+      {id:'a-grippe-angina-mcc',product:'Angina MCC',composition:'Cétylpyridinium chlorure, lidocaïne chlorhydrate monohydraté, lévomenthol',indications:['Maux de gorge'],contraindications:['< 6 ans','Grossesse','Allaitement'],dosage:'Toutes les 3 à 4 h.'},
+      {id:'a-grippe-drossadin',product:'Drossadin 0,1 %',composition:'Hexetidinum',indications:['Maux de gorge','Inflammation buccale'],contraindications:['< 12 ans','Grossesse'],dosage:'Gargarisme 2 × 15 ml par jour.'}
+    ],
+    digestif: [
+      {id:'a-digestif-riopan',product:'Riopan Gel 800 mg',composition:'Magaldrate',indications:['Brûlures d’estomac','Reflux acides'],contraindications:['Enfants < 18 ans','Grossesse','Allaitement'],dosage:'30 minutes à 1 heure après le repas, max. 8× par jour.'},
+      {id:'a-digestif-itinerol',product:'Itinerol B6 capsule',composition:'Méclozine',indications:['Nausées','Vomissements'],contraindications:['< 12 ans'],dosage:'Max. 4× par jour, soit toutes les 6 h.'},
+      {id:'a-digestif-carbolevure',product:'Carbolevure Adulte',composition:'Levure médicinale desséchée, charbon activé',indications:['Diarrhées'],contraindications:['< 6 ans'],dosage:'6 à 18 ans : 1 capsule 2×/jour. Adultes : 1 capsule 3×/jour.'}
+    ],
+    sommeil: [
+      {id:'a-sommeil-redormin',product:'Redormin',composition:'Valériane, houblon',indications:['Trouble du sommeil','Difficulté à s’endormir'],contraindications:['< 12 ans'],dosage:'1 à 2 comprimés, 1 h avant le coucher.'},
+      {id:'a-sommeil-relaxane',product:'Relaxane',composition:'Passiflore, pétasite, valériane, mélisse',indications:['Tensions nerveuses'],contraindications:['< 6 ans'],dosage:'1 comprimé 3× par jour, soit toutes les 8 h.'}
+    ],
+    allergies: [
+      {id:'a-allergies-feniallerg',product:'Feniallerg gouttes',composition:'Dimétindène maléate',indications:['Urticaire','Piqûre d’insecte','Démangeaisons'],contraindications:['< 12 ans','Allaitement'],dosage:'20 à 40 gouttes 3× par jour, soit toutes les 8 h.'},
+      {id:'a-allergies-cetallerg',product:'Cetallerg 10 mg',composition:'Cétirizine',indications:['Rhume des foins','Urticaire'],contraindications:['< 12 ans','Allaitement'],dosage:'5 mg 2× par jour ou 10 mg 1× par jour.'}
+    ]
+  },
+  child: {
+    douleurs: [
+      {id:'e-douleurs-dafalgan-500',product:'Dafalgan 500 mg — dès 30 kg',composition:'Paracétamol',indications:['Articulations & dos','Mal de tête','Dents','Blessures','Fièvre et symptômes grippaux','Douleur abdominale'],contraindications:[],dosage:'Max. 4× par jour, soit toutes les 4 à 6 h.'},
+      {id:'e-douleurs-dafalgan-80',product:'Dafalgan 80 mg suppositoire — jusqu’à 10 kg',composition:'Paracétamol',indications:['Articulations & dos','Mal de tête','Dents','Blessures','Fièvre et symptômes grippaux','Douleur abdominale'],contraindications:[],dosage:'Max. 4× par jour, soit toutes les 4 à 6 h.'},
+      {id:'e-douleurs-dafalgan-150',product:'Dafalgan 150 mg suppositoire — entre 7 et 22 kg',composition:'Paracétamol',indications:['Articulations & dos','Mal de tête','Dents','Blessures','Fièvre et symptômes grippaux','Douleur abdominale'],contraindications:[],dosage:'Max. 4× par jour, soit toutes les 4 à 6 h.'},
+      {id:'e-douleurs-dafalgan-300',product:'Dafalgan 300 mg suppositoire — entre 15 et 40 kg',composition:'Paracétamol',indications:['Articulations & dos','Mal de tête','Dents','Blessures','Fièvre et symptômes grippaux','Douleur abdominale'],contraindications:[],dosage:'Max. 4× par jour, soit toutes les 4 à 6 h.'}
+    ],
+    grippe: [
+      {id:'e-grippe-serophy',product:'Serophy',composition:'NaCl 0,9 %',indications:['Rhume / nez bouché'],contraindications:['Aucune'],dosage:'Plusieurs lavages par jour, avant les repas et avant les siestes.'}
+    ],
+    digestif: [
+      {id:'e-digestif-perenterol',product:'Perenterol sachet 250',composition:'Saccharomyces boulardii',indications:['Diarrhées'],contraindications:['< 6 mois'],dosage:'Nourrisson : 2×/jour. Enfant : 2×/jour, soit toutes les 8 h.'},
+      {id:'e-digestif-itinerol',product:'Itinerol B6 suppositoire — 6 à 12 ans',composition:'Méclozine',indications:['Nausées','Vomissements'],contraindications:['Hypersensibilité à la méclozine ou à la pyridoxine'],dosage:'1× par jour : un suppositoire.'}
+    ],
+    sommeil: [
+      {id:'e-sommeil-redormin',product:'Redormin',composition:'Valériane, houblon',indications:['Trouble du sommeil','Difficulté à s’endormir'],contraindications:['< 6 ans'],dosage:'½ comprimé, 1 h avant le coucher.'}
+    ],
+    allergies: [
+      {id:'e-allergies-feniallerg',product:'Feniallerg gouttes',composition:'Dimétindène maléate',indications:['Urticaire','Piqûre d’insecte','Démangeaisons'],contraindications:['< 1 mois'],dosage:'1–3 ans : 10 gouttes 3×/jour, soit toutes les 8 h. 3–12 ans : 15 gouttes 3×/jour, soit toutes les 8 h. Dès 12 ans : 20 gouttes 3×/jour, soit toutes les 8 h.'}
+    ]
+  }
+};
+function allSimpleMedsForAudience(audience) {
+  var result = [];
+  var groups = SIMPLE_MEDS[audience] || {};
+  Object.keys(groups).forEach(function(category) {
+    groups[category].forEach(function(med) { result.push({category:category, med:med}); });
+  });
+  return result;
+}
+function findSimpleMed(id) {
+  var all = allSimpleMedsForAudience(simpleAudience);
+  for (var i=0;i<all.length;i++) if (all[i].med.id===id) return all[i];
+  return null;
+}
+
+/* ==================== STATE ==================== */
+var currentScreen = 0;
+var flowMode = null;
+var selectedCard = null;
+var checkedSyms = [];
+var simpleAudience = null;
+var currentSimpleCategory = null;
+var currentSimpleReason = '';
+var selectedSimpleMeds = [];
+var selectedSimpleReasons = {};
+
+window.addEventListener('DOMContentLoaded', function() {
+  for (var i=1;i<8;i++) { var s=document.getElementById('screen'+i); if(s) s.style.display='none'; }
+  var s0=document.getElementById('screen0'); if(s0) s0.style.display='block';
+  updateButtons();
+});
+
+function showScreen(n) {
+  for (var i=0;i<8;i++) { var s=document.getElementById('screen'+i); if(s) s.style.display=(i===n)?'block':'none'; }
+  var mc=document.getElementById('mainContent'); if(mc) mc.scrollTop=0;
+  currentScreen=n; updateButtons();
+}
+function updateButtons() {
+  var btnBack=document.getElementById('btnBack'), btnNext=document.getElementById('btnNext'), btnPrint=document.getElementById('btnPrint'), btnNew=document.getElementById('btnNew');
+  btnBack.style.display=currentScreen>0?'inline-flex':'none';
+  btnNext.style.display='none';
+  btnPrint.style.display=currentScreen===5?'inline-flex':'none';
+  btnNew.style.display=currentScreen===5?'inline-flex':'none';
+  btnNext.textContent='Suivant →';
+  if(currentScreen===0){btnBack.style.display='none';btnNext.style.display='inline-flex';}
+  else if(currentScreen===2||currentScreen===3||currentScreen===4){btnNext.style.display='inline-flex';}
+  else if((currentScreen===6||currentScreen===7)&&selectedSimpleMeds.length>0){btnNext.style.display='inline-flex';btnNext.textContent='Signes vitaux →';}
+}
+function goNext() {
+  if(currentScreen===0){
+    if(!validatePage0()){var firstInvalid=document.querySelector('#screen0 .form-input.error');if(firstInvalid)firstInvalid.focus();return;}
+    showScreen(1);
+  } else if(currentScreen===2){buildSymptoms();showScreen(3);}
+  else if(currentScreen===3){showScreen(4);}
+  else if(currentScreen===4){buildSummary();showScreen(5);}
+  else if((currentScreen===6||currentScreen===7)&&selectedSimpleMeds.length>0){showScreen(4);}
+}
+function goBack() {
+  if(currentScreen===1)showScreen(0);
+  else if(currentScreen===2)showScreen(1);
+  else if(currentScreen===3)showScreen(2);
+  else if(currentScreen===4){if(flowMode==='simple')showScreen(currentSimpleCategory?7:6);else showScreen(3);}
+  else if(currentScreen===5)showScreen(4);
+  else if(currentScreen===6)showScreen(1);
+  else if(currentScreen===7){renderSelectedSimpleMeds();showScreen(6);}
+}
+
+function validatePage0(){
+  var fields=['centre','batiment','heure','ra','ddn'],ok=true;
+  for(var i=0;i<fields.length;i++){var f=fields[i],inp=document.getElementById('f_'+f),err=document.getElementById('e_'+f);if(!inp.value.trim()){inp.classList.add('error');err.classList.add('show');ok=false;}else{inp.classList.remove('error');err.classList.remove('show');}}
+  return ok;
+}
+(function(){var fields=['centre','batiment','heure','ra','ddn'];for(var i=0;i<fields.length;i++){(function(f){document.getElementById('f_'+f).addEventListener('input',function(){this.classList.remove('error');document.getElementById('e_'+f).classList.remove('show');});})(fields[i]);}})();
+
+function selectCard(key){
+  flowMode='redflag';selectedCard=key;checkedSyms=[];simpleAudience=null;currentSimpleCategory=null;currentSimpleReason='';selectedSimpleMeds=[];selectedSimpleReasons={};
+  var card=CARDS[key];document.getElementById('s2_title').textContent=card.title;document.getElementById('s2_def').textContent=card.def;document.getElementById('s2_cond').textContent=card.cond;showScreen(2);
+}
+function buildSymptoms(){
+  var card=CARDS[selectedCard],list=document.getElementById('symList');list.innerHTML='';checkedSyms=[];
+  for(var i=0;i<card.symptoms.length;i++){(function(sym){var div=document.createElement('div');div.className='sym-item';div.innerHTML='<div class="sym-cb"><span class="sym-cb-icon">✓</span></div><div class="sym-text">⚠️ '+esc(sym)+'</div>';div.onclick=function(){toggleSym(div,sym);};list.appendChild(div);})(card.symptoms[i]);}
+}
+function toggleSym(el,sym){el.classList.toggle('checked');if(el.classList.contains('checked')){if(checkedSyms.indexOf(sym)===-1)checkedSyms.push(sym);}else checkedSyms=checkedSyms.filter(function(s){return s!==sym;});}
+
+function chooseSimpleAudience(audience){
+  flowMode='simple';selectedCard=null;checkedSyms=[];
+  if(simpleAudience!==audience){selectedSimpleMeds=[];selectedSimpleReasons={};}
+  simpleAudience=audience;currentSimpleCategory=null;currentSimpleReason='';
+  document.getElementById('s6_audience').textContent=audience==='adult'?'Adultes':'Enfants';renderSelectedSimpleMeds();showScreen(6);
+}
+function selectSimpleCategory(category){
+  currentSimpleCategory=category;currentSimpleReason='';
+  document.getElementById('s7_title').textContent=SIMPLE_CATEGORY_LABELS[category]+' — '+(simpleAudience==='adult'?'Adultes':'Enfants');
+  document.getElementById('s7_reference').textContent='Choisissez d’abord le problème précis. La liste affichera ensuite uniquement les médicaments correspondants dans le référentiel kiosk, version du 15.06.2026.';
+  renderSimpleReasonSelector();renderMedicationList();renderSelectedSimpleMeds();showScreen(7);
+}
+function getSimpleReasons(){
+  return (((SIMPLE_REASON_RULES[simpleAudience]||{})[currentSimpleCategory])||[]);
+}
+function getSimpleReasonRule(label){
+  var reasons=getSimpleReasons();
+  for(var i=0;i<reasons.length;i++)if(reasons[i].label===label)return reasons[i];
+  return null;
+}
+function renderSimpleReasonSelector(){
+  var list=document.getElementById('simpleReasonList');
+  list.innerHTML='';
+  getSimpleReasons().forEach(function(reason){
+    var button=document.createElement('button');
+    button.type='button';
+    button.className='simple-problem-btn'+(currentSimpleReason===reason.label?' selected':'');
+    button.textContent=reason.label;
+    button.setAttribute('aria-pressed',currentSimpleReason===reason.label?'true':'false');
+    button.addEventListener('click',function(){changeSimpleReason(reason.label);});
+    list.appendChild(button);
+  });
+}
+function changeSimpleReason(value){
+  currentSimpleReason=value||'';
+  renderSimpleReasonSelector();renderMedicationList();
+}
+function formatList(items){if(!items||items.length===0)return '—';return items.map(function(item){return esc(item);}).join(' · ');}
+function medicationCardHTML(med,selected,compact){
+  var categoryInfo=findSimpleMed(med.id),categoryLabel=categoryInfo?SIMPLE_CATEGORY_LABELS[categoryInfo.category]:'',reason=selectedSimpleReasons[med.id]||'';
+  var reasonHTML=reason?'<div class="med-reason-tag">Motif : '+esc(reason)+'</div>':'';
+  return '<div class="med-card'+(selected?' selected':'')+'">'+
+    '<div class="med-product">'+esc(med.product)+'</div>'+
+    '<div class="med-composition">'+esc(med.composition)+(compact&&categoryLabel?' · '+esc(categoryLabel):'')+'</div>'+
+    reasonHTML+
+    '<div class="med-row"><span class="med-row-label">Indications</span><div class="med-row-value">'+formatList(med.indications)+'</div></div>'+
+    '<div class="med-row"><span class="med-row-label">Contre-indications</span><div class="med-row-value">'+formatList(med.contraindications)+'</div></div>'+
+    '<div class="med-row"><span class="med-row-label">Posologie</span><div class="med-row-value">'+esc(med.dosage)+'</div></div>'+
+    (compact?'':'<button type="button" class="med-toggle" onclick="toggleSimpleMedication(\''+esc(med.id)+'\')">'+(selected?'✓ Sélectionné — retirer':'+ Ajouter ce médicament')+'</button>')+
+    '</div>';
+}
+function renderMedicationList(){
+  var list=document.getElementById('medList'),meds=((SIMPLE_MEDS[simpleAudience]||{})[currentSimpleCategory]||[]);
+  if(!currentSimpleReason){list.innerHTML='<div class="med-empty">Choisissez le problème précis ci-dessus pour afficher les médicaments correspondants.</div>';return;}
+  var rule=getSimpleReasonRule(currentSimpleReason),allowed=rule?rule.medIds:[];
+  meds=meds.filter(function(med){return allowed.indexOf(med.id)!==-1;});
+  if(!meds.length){list.innerHTML='<div class="med-empty">Aucun médicament du référentiel ne correspond à ce motif.</div>';return;}
+  list.innerHTML=meds.map(function(med){return medicationCardHTML(med,selectedSimpleMeds.indexOf(med.id)!==-1,false);}).join('');
+}
+function toggleSimpleMedication(id){
+  var index=selectedSimpleMeds.indexOf(id);
+  if(index===-1){
+    selectedSimpleMeds.push(id);
+    if(currentSimpleReason)selectedSimpleReasons[id]=currentSimpleReason;
+  }else{
+    selectedSimpleMeds.splice(index,1);delete selectedSimpleReasons[id];
+  }
+  renderMedicationList();renderSelectedSimpleMeds();updateButtons();
+}
+function renderSelectedSimpleMeds(){
+  var panels=['s6_selected_panel','s7_selected_panel'],titles=['s6_selected_title','s7_selected_title'],chips=['s6_selected_chips','s7_selected_chips'];
+  var html=selectedSimpleMeds.map(function(id){var found=findSimpleMed(id),reason=selectedSimpleReasons[id]||'';return found?'<span class="selected-chip">✓ '+esc(found.med.product)+(reason?' · '+esc(reason):'')+'</span>':'';}).join('');
+  for(var i=0;i<panels.length;i++){var panel=document.getElementById(panels[i]);if(!panel)continue;panel.style.display=selectedSimpleMeds.length?'block':'none';document.getElementById(titles[i]).textContent='Médicaments sélectionnés ('+selectedSimpleMeds.length+')';document.getElementById(chips[i]).innerHTML=html;}
+  updateButtons();
+}
+
+function getPatientData(){var ddn=document.getElementById('f_ddn').value.trim(),ddnFmt=ddn;if(ddn){var parts=ddn.split('-');if(parts.length===3)ddnFmt=parts[2]+'.'+parts[1]+'.'+parts[0];}return{centre:document.getElementById('f_centre').value.trim(),batiment:document.getElementById('f_batiment').value.trim(),heure:document.getElementById('f_heure').value.trim(),ra:document.getElementById('f_ra').value.trim(),ddn:ddnFmt};}
+function getVitalsRows(){var ta=getBloodPressure(),rows=[],fc=document.getElementById('v_fc').value.trim(),spo2=document.getElementById('v_spo2').value.trim(),temp=document.getElementById('v_temp').value.trim(),glyc=document.getElementById('v_glyc').value.trim(),doul=document.getElementById('v_doul').value.trim();if(ta)rows.push(['T.A.',ta+' mmHg']);if(fc)rows.push(['F.C.',fc+' bpm']);if(spo2)rows.push(['SpO₂',spo2+'%']);if(temp)rows.push(['Temp.',temp+'°C']);if(glyc)rows.push(['Glycémie',glyc+' mmol/L']);if(doul)rows.push(['Douleur',doul+'/10']);return rows;}
+function buildSummary(){
+  var patient=getPatientData();document.getElementById('s5_patient').innerHTML='<strong>RA :</strong> '+esc(patient.ra)+'<br><strong>DDN :</strong> '+esc(patient.ddn)+'<br><strong>Centre :</strong> '+esc(patient.centre)+' &nbsp;|&nbsp; <strong>Bât. :</strong> '+esc(patient.batiment)+'<br><strong>Heure :</strong> '+esc(patient.heure);
+  var vitRows=getVitalsRows();document.getElementById('s5_vitals').innerHTML=vitRows.length?vitRows.map(function(r){return esc(r[0]+' : '+r[1]);}).join('<br>'):'—';
+  var simpleWrap=document.getElementById('s5_simple_wrap'),symWrap=document.getElementById('s5_sym_wrap'),rfBadge=document.getElementById('s5_rfBadge'),hotlineWrap=document.getElementById('s5_hotline_wrap'),protocol=document.getElementById('s5_protocol'),consciousness=document.getElementById('s5_consciousness');
+  if(flowMode==='simple'){
+    document.getElementById('s5_page_title').textContent='💊 Cas simple — Récapitulatif';document.getElementById('s5_type_label').textContent='Parcours';document.getElementById('s5_type').textContent='Cas simple — '+(simpleAudience==='adult'?'Adultes':'Enfants');
+    symWrap.style.display='none';rfBadge.style.display='none';hotlineWrap.style.display='none';protocol.style.display='none';consciousness.style.display='none';simpleWrap.style.display='block';
+    var simpleNote=document.getElementById('simpleCaseNote').value.trim(),simpleNoteWrap=document.getElementById('s5_simple_note_wrap');
+    simpleNoteWrap.style.display=simpleNote?'block':'none';document.getElementById('s5_simple_note').innerHTML=simpleNote?nl2brEsc(simpleNote):'';
+    document.getElementById('s5_simple_meds').innerHTML=selectedSimpleMeds.map(function(id){var found=findSimpleMed(id);return found?medicationCardHTML(found.med,true,true):'';}).join('');
+  }else{
+    var card=CARDS[selectedCard];document.getElementById('s5_page_title').textContent='🚑 Quoi faire ?';document.getElementById('s5_type_label').textContent='Type de douleur';document.getElementById('s5_type').textContent=card.title;
+    simpleWrap.style.display='none';symWrap.style.display='block';hotlineWrap.style.display='block';protocol.style.display='grid';consciousness.style.display='block';
+    if(checkedSyms.length>0){document.getElementById('s5_symptoms').innerHTML=checkedSyms.map(function(s){return '⚠️ '+esc(s);}).join('<br>');rfBadge.style.display='block';}else{document.getElementById('s5_symptoms').textContent='Aucun symptôme coché';rfBadge.style.display='none';}
+    document.getElementById('s5_proteger').innerHTML=nl2brEsc(card.proteger);document.getElementById('s5_secourir').innerHTML=nl2brEsc(card.secourir);
+  }
+  var now=new Date(),d=now.getDate(),m=now.getMonth()+1,y=now.getFullYear(),hh=String(now.getHours()).padStart(2,'0'),mm=String(now.getMinutes()).padStart(2,'0');document.getElementById('s5_datetime').textContent='Enregistré le '+(d<10?'0'+d:d)+'.'+(m<10?'0'+m:m)+'.'+y+' à '+hh+':'+mm;
+}
+
+function printPatientGrid(patient,dateStr){var cells=[['RA',patient.ra],['Date de naissance',patient.ddn],['Centre',patient.centre],['Bâtiment',patient.batiment],['Heure',patient.heure],['Date',dateStr]];return '<div class="pr-grid">'+cells.map(function(cell){return '<div class="pr-cell"><div class="pr-label">'+esc(cell[0])+'</div><div class="pr-value">'+esc(cell[1])+'</div></div>';}).join('')+'</div>';}
+function printVitals(vitRows){if(!vitRows.length)return '';return '<div class="pr-section-title">Signes vitaux</div><div class="pr-grid">'+vitRows.map(function(row){return '<div class="pr-cell"><div class="pr-label">'+esc(row[0])+'</div><div class="pr-value">'+esc(row[1])+'</div></div>';}).join('')+'</div>';}
+function printSimpleMedication(found){
+  var med=found.med,reason=selectedSimpleReasons[med.id]||'';
+  return '<div class="pr-med"><div class="pr-med-title">'+esc(med.product)+'</div><div class="pr-med-sub">'+esc(med.composition)+' · '+esc(SIMPLE_CATEGORY_LABELS[found.category])+'</div>'+
+    (reason?'<div class="pr-med-row"><strong>Motif</strong><br>'+esc(reason)+'</div>':'')+
+    '<div class="pr-med-row"><strong>Indications</strong><br>'+formatList(med.indications)+'</div><div class="pr-med-row"><strong>Contre-indications</strong><br>'+formatList(med.contraindications)+'</div><div class="pr-med-row"><strong>Posologie</strong><br>'+esc(med.dosage)+'</div></div>';
+}
+function doPrint(){
+  var patient=getPatientData(),vitRows=getVitalsRows(),now=new Date(),dateStr=String(now.getDate()).padStart(2,'0')+'.'+String(now.getMonth()+1).padStart(2,'0')+'.'+now.getFullYear(),timeStr=String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0'),body='';
+  if(flowMode==='simple'){
+    var simpleNote=document.getElementById('simpleCaseNote').value.trim();
+    body+='<div class="pr-title">💊 CAS SIMPLE — '+(simpleAudience==='adult'?'ADULTES':'ENFANTS')+'</div><div class="pr-section-title">Informations patient</div>'+printPatientGrid(patient,dateStr)+printVitals(vitRows);
+    if(simpleNote)body+='<div class="pr-section-title">Note / description du cas</div><div class="pr-box">'+nl2brEsc(simpleNote)+'</div>';
+    body+='<div class="pr-section-title">Médicaments sélectionnés</div>';
+    body+=selectedSimpleMeds.map(function(id){var found=findSimpleMed(id);return found?printSimpleMedication(found):'';}).join('');
+    body+='<div class="pr-box"><strong>Référentiel médicaments :</strong> version du 15.06.2026.</div><div class="pr-footer">ORS Medic-Help · Cas simples · Enregistré le '+dateStr+' à '+timeStr+'</div>';
+  }else{
+    var card=CARDS[selectedCard],hasRF=checkedSyms.length>0,sel=document.getElementById('hotlineSel'),hotlineVal=sel.value,hotlineTxt=sel.options[sel.selectedIndex].text,medicationNotes=document.getElementById('medicationNotes').value.trim();
+    body+='<div class="pr-title">🚨 RED FLAGS — '+esc(card.title)+'</div><div class="pr-section-title">Informations patient</div>'+printPatientGrid(patient,dateStr)+printVitals(vitRows);
+    if(hasRF){body+='<div class="pr-rf"><div class="pr-rf-title">🚨 RED FLAG</div><div>Agissez immédiatement — appelez le 144</div></div><div class="pr-section-title">Symptômes cochés</div>'+checkedSyms.map(function(sym){return '<div style="padding:7px 0;border-bottom:1px solid #EEE">⚠️ '+esc(sym)+'</div>';}).join('');}else body+='<div class="pr-ok">✅ Aucun Red Flag détecté</div>';
+    if(hotlineVal)body+='<div class="pr-box"><strong>📞 Selon l’avis de la hotline</strong><br>'+esc(hotlineTxt)+'</div>';
+    if(medicationNotes)body+='<div class="pr-box"><strong>💊 Médicament(s) administré(s)</strong><br>'+nl2brEsc(medicationNotes)+'</div>';
+    body+='<div class="pr-footer">RED FLAGS — ORS Medic-Help · Enregistré le '+dateStr+' à '+timeStr+' · Dernière version validée : 18.07.2024</div>';
+  }
+  var report=document.getElementById('printReport');report.innerHTML='<div class="print-report-inner">'+body+'</div>';report.setAttribute('aria-hidden','false');window.print();
+}
+window.addEventListener('afterprint',function(){var report=document.getElementById('printReport');if(report){report.innerHTML='';report.setAttribute('aria-hidden','true');}});
+
+['v_ta_sys','v_ta_dia'].forEach(function(id){var input=document.getElementById(id);if(!input)return;input.addEventListener('input',function(){input.value=input.value.replace(/\D/g,'').slice(0,3);});});
+(function(){var btn=document.getElementById('btnNext');if(btn){btn.addEventListener('touchend',function(e){e.preventDefault();goNext();},{passive:false});}})();
+function newPatient(){
+  var fields=['centre','batiment','heure','ra','ddn'];for(var i=0;i<fields.length;i++){var inp=document.getElementById('f_'+fields[i]);inp.value='';inp.classList.remove('error');document.getElementById('e_'+fields[i]).classList.remove('show');}
+  var vitals=['ta_sys','ta_dia','fc','spo2','temp','glyc','doul'];for(var j=0;j<vitals.length;j++)document.getElementById('v_'+vitals[j]).value='';
+  document.getElementById('hotlineSel').value='';document.getElementById('medicationNotes').value='';document.getElementById('simpleCaseNote').value='';flowMode=null;selectedCard=null;checkedSyms=[];simpleAudience=null;currentSimpleCategory=null;currentSimpleReason='';selectedSimpleMeds=[];selectedSimpleReasons={};renderSelectedSimpleMeds();showScreen(0);
+}
+</script>
+</body>
+</html>
