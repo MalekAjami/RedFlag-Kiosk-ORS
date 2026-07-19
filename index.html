@@ -457,6 +457,19 @@ body {
   margin-bottom: 7px;
 }
 .sum-val { font-size: 15px; font-weight: 600; line-height: 1.55; }
+.report-page-title {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.report-case-name {
+  display: block;
+  font-size: 16px;
+  font-weight: 750;
+  color: var(--gray);
+  line-height: 1.35;
+  letter-spacing: 0;
+}
 
 /* ===== HOTLINE BOX ===== */
 .hotline-wrap {
@@ -488,6 +501,39 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%232471A3' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 12px center;
+}
+.f2-field { margin-top: 12px; }
+.f2-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.f2-option { position: relative; cursor: pointer; }
+.f2-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.f2-option span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border: 2px solid var(--blue);
+  border-radius: 9px;
+  background: white;
+  color: var(--blue);
+  font-size: 15px;
+  font-weight: 800;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.f2-option input:checked + span {
+  background: var(--blue);
+  color: white;
+}
+.f2-option input:focus-visible + span {
+  outline: 3px solid rgba(36,113,163,0.22);
+  outline-offset: 2px;
 }
 .med-field { margin-top: 12px; }
 .med-label {
@@ -842,6 +888,13 @@ body {
   color: #C0392B;
   border-bottom: 3px solid #C0392B;
   padding-bottom: 8px;
+  margin-bottom: 6px;
+}
+.pr-case-name {
+  font-size: 17px;
+  font-weight: 900;
+  color: #1C2833;
+  line-height: 1.35;
   margin-bottom: 14px;
 }
 .pr-section-title {
@@ -944,7 +997,7 @@ body {
         <div class="card-btn" id="cb_plaies" onclick="selectCard('plaies')"><span class="card-icon">🩹</span>Plaies &amp;<br>Traumatismes</div>
         <div class="card-btn" id="cb_respiratoires" onclick="selectCard('respiratoires')"><span class="card-icon">🫁</span>Problèmes<br>Respiratoires</div>
       </div>
-      <div class="section-heading">Cas simples</div>
+      <div class="section-heading">Cas simples à gérer sur place</div>
       <div class="simple-audience-grid">
         <button type="button" class="audience-btn" onclick="chooseSimpleAudience('adult')"><span class="audience-icon">🧑</span>Adultes</button>
         <button type="button" class="audience-btn" onclick="chooseSimpleAudience('child')"><span class="audience-icon">👶</span>Enfants</button>
@@ -1047,14 +1100,17 @@ body {
     <!-- SCREEN 5 — Quoi faire -->
     <div class="screen" id="screen5">
       <div class="etape-pill">Étape 5</div>
-      <div class="page-title" id="s5_page_title">🚑 Quoi faire ?</div>
+      <div class="page-title report-page-title" id="s5_page_title">
+        <span id="s5_report_title">Rapport de cas maladie</span>
+        <span class="report-case-name" id="s5_case_name"></span>
+      </div>
 
       <div class="sum-card">
         <div class="sum-lbl">Patient</div>
         <div class="sum-val" id="s5_patient"></div>
       </div>
 
-      <div class="sum-card">
+      <div class="sum-card" id="s5_type_wrap" style="display:none">
         <div class="sum-lbl" id="s5_type_label">Type de douleur</div>
         <div class="sum-val" id="s5_type"></div>
       </div>
@@ -1093,6 +1149,19 @@ body {
           <option value="taxi">Conduisez-le à l'hôpital en taxi.</option>
           <option value="ambulance">Conduisez-le à l'hôpital en ambulance.</option>
         </select>
+        <div class="f2-field">
+          <div class="med-label">📄 Fiche F2 remplie ?</div>
+          <div class="f2-options" role="radiogroup" aria-label="Fiche F2 remplie">
+            <label class="f2-option">
+              <input type="radio" name="f2Filled" value="oui">
+              <span>Oui</span>
+            </label>
+            <label class="f2-option">
+              <input type="radio" name="f2Filled" value="non">
+              <span>Non</span>
+            </label>
+          </div>
+        </div>
         <div class="med-field">
           <div class="med-label">💊 Médicament(s) à administrer</div>
           <textarea id="medicationNotes" class="med-textarea" placeholder="Nom du médicament, dose, voie, heure…"></textarea>
@@ -1666,16 +1735,18 @@ function buildSummary(){
   var patient=getPatientData();document.getElementById('s5_patient').innerHTML='<strong>RA :</strong> '+esc(patient.ra)+'<br><strong>DDN :</strong> '+esc(patient.ddn)+'<br><strong>Centre :</strong> '+esc(patient.centre)+' &nbsp;|&nbsp; <strong>Bât. :</strong> '+esc(patient.batiment)+'<br><strong>Heure :</strong> '+esc(patient.heure);
   var vitRows=getVitalsRows();document.getElementById('s5_vitals').innerHTML=vitRows.length?vitRows.map(function(r){return esc(r[0]+' : '+r[1]);}).join('<br>'):'—';
   var simpleWrap=document.getElementById('s5_simple_wrap'),symWrap=document.getElementById('s5_sym_wrap'),rfBadge=document.getElementById('s5_rfBadge'),hotlineWrap=document.getElementById('s5_hotline_wrap'),protocol=document.getElementById('s5_protocol'),consciousness=document.getElementById('s5_consciousness');
+  document.getElementById('s5_report_title').textContent='Rapport de cas maladie';
   if(flowMode==='simple'){
-    document.getElementById('s5_page_title').textContent='💊 Cas simple — Récapitulatif';document.getElementById('s5_type_label').textContent='Parcours';document.getElementById('s5_type').textContent='Cas simple — '+(simpleAudience==='adult'?'Adultes':'Enfants');
+    var simpleCaseLabel='Cas simple à gérer sur place — '+(simpleAudience==='adult'?'Adultes':'Enfants');
+    document.getElementById('s5_case_name').textContent=simpleCaseLabel;document.getElementById('s5_type_label').textContent='Parcours';document.getElementById('s5_type').textContent=simpleCaseLabel;
     symWrap.style.display='none';rfBadge.style.display='none';hotlineWrap.style.display='none';protocol.style.display='none';consciousness.style.display='none';simpleWrap.style.display='block';
     var simpleNote=document.getElementById('simpleCaseNote').value.trim(),simpleNoteWrap=document.getElementById('s5_simple_note_wrap');
     simpleNoteWrap.style.display=simpleNote?'block':'none';document.getElementById('s5_simple_note').innerHTML=simpleNote?nl2brEsc(simpleNote):'';
     document.getElementById('s5_simple_meds').innerHTML=selectedSimpleMeds.map(function(id){var found=findSimpleMed(id);return found?medicationCardHTML(found.med,true,true):'';}).join('');
   }else{
-    var card=CARDS[selectedCard];document.getElementById('s5_page_title').textContent='🚑 Quoi faire ?';document.getElementById('s5_type_label').textContent='Type de douleur';document.getElementById('s5_type').textContent=card.title;
-    simpleWrap.style.display='none';symWrap.style.display='block';hotlineWrap.style.display='block';protocol.style.display='grid';consciousness.style.display='block';
-    if(checkedSyms.length>0){document.getElementById('s5_symptoms').innerHTML=checkedSyms.map(function(s){return '⚠️ '+esc(s);}).join('<br>');rfBadge.style.display='block';}else{document.getElementById('s5_symptoms').textContent='Aucun symptôme coché';rfBadge.style.display='none';}
+    var card=CARDS[selectedCard],hasRF=checkedSyms.length>0;document.getElementById('s5_case_name').textContent=card.title;document.getElementById('s5_type_label').textContent='Type de douleur';document.getElementById('s5_type').textContent=card.title;
+    simpleWrap.style.display='none';symWrap.style.display='block';hotlineWrap.style.display=hasRF?'none':'block';protocol.style.display='grid';consciousness.style.display='block';
+    if(hasRF){document.getElementById('s5_symptoms').innerHTML=checkedSyms.map(function(s){return '⚠️ '+esc(s);}).join('<br>');rfBadge.style.display='block';}else{document.getElementById('s5_symptoms').textContent='Aucun symptôme coché';rfBadge.style.display='none';}
     document.getElementById('s5_proteger').innerHTML=nl2brEsc(card.proteger);document.getElementById('s5_secourir').innerHTML=nl2brEsc(card.secourir);
   }
   var now=new Date(),d=now.getDate(),m=now.getMonth()+1,y=now.getFullYear(),hh=String(now.getHours()).padStart(2,'0'),mm=String(now.getMinutes()).padStart(2,'0');document.getElementById('s5_datetime').textContent='Enregistré le '+(d<10?'0'+d:d)+'.'+(m<10?'0'+m:m)+'.'+y+' à '+hh+':'+mm;
@@ -1692,18 +1763,23 @@ function printSimpleMedication(found){
 function doPrint(){
   var patient=getPatientData(),vitRows=getVitalsRows(),now=new Date(),dateStr=String(now.getDate()).padStart(2,'0')+'.'+String(now.getMonth()+1).padStart(2,'0')+'.'+now.getFullYear(),timeStr=String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0'),body='';
   if(flowMode==='simple'){
-    var simpleNote=document.getElementById('simpleCaseNote').value.trim();
-    body+='<div class="pr-title">💊 CAS SIMPLE — '+(simpleAudience==='adult'?'ADULTES':'ENFANTS')+'</div><div class="pr-section-title">Informations patient</div>'+printPatientGrid(patient,dateStr)+printVitals(vitRows);
+    var simpleNote=document.getElementById('simpleCaseNote').value.trim(),simpleCaseLabel='Cas simple à gérer sur place — '+(simpleAudience==='adult'?'Adultes':'Enfants');
+    body+='<div class="pr-title">Rapport de cas maladie</div><div class="pr-case-name">'+esc(simpleCaseLabel)+'</div><div class="pr-section-title">Informations patient</div>'+printPatientGrid(patient,dateStr)+printVitals(vitRows);
     if(simpleNote)body+='<div class="pr-section-title">Note / description du cas</div><div class="pr-box">'+nl2brEsc(simpleNote)+'</div>';
     body+='<div class="pr-section-title">Médicaments sélectionnés</div>';
     body+=selectedSimpleMeds.map(function(id){var found=findSimpleMed(id);return found?printSimpleMedication(found):'';}).join('');
     body+='<div class="pr-box"><strong>Référentiel médicaments :</strong> version du 15.06.2026.</div><div class="pr-footer">ORS Medic-Help · Cas simples · Enregistré le '+dateStr+' à '+timeStr+'</div>';
   }else{
-    var card=CARDS[selectedCard],hasRF=checkedSyms.length>0,sel=document.getElementById('hotlineSel'),hotlineVal=sel.value,hotlineTxt=sel.options[sel.selectedIndex].text,medicationNotes=document.getElementById('medicationNotes').value.trim();
-    body+='<div class="pr-title">🚨 RED FLAGS — '+esc(card.title)+'</div><div class="pr-section-title">Informations patient</div>'+printPatientGrid(patient,dateStr)+printVitals(vitRows);
-    if(hasRF){body+='<div class="pr-rf"><div class="pr-rf-title">🚨 RED FLAG</div><div>Agissez immédiatement — appelez le 144</div></div><div class="pr-section-title">Symptômes cochés</div>'+checkedSyms.map(function(sym){return '<div style="padding:7px 0;border-bottom:1px solid #EEE">⚠️ '+esc(sym)+'</div>';}).join('');}else body+='<div class="pr-ok">✅ Aucun Red Flag détecté</div>';
-    if(hotlineVal)body+='<div class="pr-box"><strong>📞 Selon l’avis de la hotline</strong><br>'+esc(hotlineTxt)+'</div>';
-    if(medicationNotes)body+='<div class="pr-box"><strong>💊 Médicament(s) administré(s)</strong><br>'+nl2brEsc(medicationNotes)+'</div>';
+    var card=CARDS[selectedCard],hasRF=checkedSyms.length>0,sel=document.getElementById('hotlineSel'),hotlineVal=sel.value,hotlineTxt=sel.options[sel.selectedIndex].text,medicationNotes=document.getElementById('medicationNotes').value.trim(),f2Choice=document.querySelector('input[name="f2Filled"]:checked'),f2Value=f2Choice?f2Choice.value:'';
+    body+='<div class="pr-title">Rapport de cas maladie</div><div class="pr-case-name">'+esc(card.title)+'</div><div class="pr-section-title">Informations patient</div>'+printPatientGrid(patient,dateStr)+printVitals(vitRows);
+    if(hasRF){
+      body+='<div class="pr-rf"><div class="pr-rf-title">🚨 RED FLAG</div><div>Agissez immédiatement — appelez le 144</div></div><div class="pr-section-title">Symptômes cochés</div>'+checkedSyms.map(function(sym){return '<div style="padding:7px 0;border-bottom:1px solid #EEE">⚠️ '+esc(sym)+'</div>';}).join('');
+    }else{
+      body+='<div class="pr-ok">✅ Aucun Red Flag détecté</div>';
+      if(hotlineVal)body+='<div class="pr-box"><strong>📞 Selon l’avis de la hotline</strong><br>'+esc(hotlineTxt)+'</div>';
+      if(f2Value)body+='<div class="pr-box"><strong>📄 Fiche F2 remplie</strong><br>'+(f2Value==='oui'?'Oui':'Non')+'</div>';
+      if(medicationNotes)body+='<div class="pr-box"><strong>💊 Médicament(s) administré(s)</strong><br>'+nl2brEsc(medicationNotes)+'</div>';
+    }
     body+='<div class="pr-footer">RED FLAGS — ORS Medic-Help · Enregistré le '+dateStr+' à '+timeStr+' · Dernière version validée : 18.07.2024</div>';
   }
   var report=document.getElementById('printReport');report.innerHTML='<div class="print-report-inner">'+body+'</div>';report.setAttribute('aria-hidden','false');window.print();
@@ -1715,7 +1791,7 @@ window.addEventListener('afterprint',function(){var report=document.getElementBy
 function newPatient(){
   var fields=['centre','batiment','heure','ra','ddn'];for(var i=0;i<fields.length;i++){var inp=document.getElementById('f_'+fields[i]);inp.value='';inp.classList.remove('error');document.getElementById('e_'+fields[i]).classList.remove('show');}
   var vitals=['ta_sys','ta_dia','fc','spo2','temp','glyc','doul'];for(var j=0;j<vitals.length;j++)document.getElementById('v_'+vitals[j]).value='';
-  document.getElementById('hotlineSel').value='';document.getElementById('medicationNotes').value='';document.getElementById('simpleCaseNote').value='';flowMode=null;selectedCard=null;checkedSyms=[];simpleAudience=null;currentSimpleCategory=null;currentSimpleReason='';selectedSimpleMeds=[];selectedSimpleReasons={};renderSelectedSimpleMeds();showScreen(0);
+  document.getElementById('hotlineSel').value='';document.querySelectorAll('input[name="f2Filled"]').forEach(function(input){input.checked=false;});document.getElementById('medicationNotes').value='';document.getElementById('simpleCaseNote').value='';flowMode=null;selectedCard=null;checkedSyms=[];simpleAudience=null;currentSimpleCategory=null;currentSimpleReason='';selectedSimpleMeds=[];selectedSimpleReasons={};renderSelectedSimpleMeds();showScreen(0);
 }
 </script>
 </body>
